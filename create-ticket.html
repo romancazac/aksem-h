@@ -1,0 +1,410 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+	<title>Dashboard</title>
+	<meta charset="UTF-8">
+	<meta name="format-detection" content="telephone=no">
+	<!-- <style>body{opacity: 0;}</style> -->
+	<link rel="stylesheet" href="css/style.min.css?_v=20221213112420">
+	<link rel="shortcut icon" href="favicon.ico">
+	<!-- <meta name="robots" content="noindex, nofollow"> -->
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+
+<!-- data-theme='light' -->
+
+<body data-theme='dark'>
+	<div class="wrapper">
+
+
+		<main class="page page-dashboard">
+			<div class="page-dashboard__row">
+				<aside class="page-dashboard__aside aside ">
+					<!-- toggle click "aside__btn-open" class "menu-open" open/close menu to > 1200px -->
+					<!-- ex - <aside class="page-dashboard__aside aside menu-open"> -->
+					<button class="aside__btn-open icon-menu">
+						<span></span>
+					</button>
+					<a href="#" class="aside__logo">KG</a>
+					<div class="aside__top">
+						<div class="aside__dropdown dropdown ">
+							<!-- add class dropdown__name "_active-drop" open drop -->
+							<!-- exemple  <span class="dropdown__name _active-drop"></span> -->
+							<span class="dropdown__name _active-drop">
+								Katerina Gorgos
+								<span class="dropdown__icon">
+									<svg fill="none">
+										<path d="M6.49996 8.20529C6.26698 8.20529 6.03402 8.11633 5.85639 7.93878L0.266684 2.34902C-0.0888946 1.99344 -0.0888946 1.41693 0.266684 1.0615C0.622118 0.706063 1.19851 0.706063 1.55412 1.0615L6.49996 6.00763L11.4458 1.06167C11.8014 0.706236 12.3778 0.706236 12.7332 1.06167C13.0889 1.4171 13.0889 1.99361 12.7332 2.34919L7.14354 7.93896C6.96582 8.11653 6.73286 8.20529 6.49996 8.20529Z" />
+									</svg>
+								</span>
+
+							</span>
+							<ul class="dropdown__items">
+								<li><a class="dropdown__item dropdown__item_conf" href="#">Configuration</a></li>
+								<li><a class="dropdown__item" href="#">Log out</a></li>
+							</ul>
+						</div>
+						<button class="aside__btn btn-block"><span>Create ticket</span></button>
+					</div>
+					<div class="aside__body">
+						<nav class="aside__nav nav-aside">
+							<ul class="nav-aside__list">
+								<li><a href="tickets.html" class="nav-aside__item _active">Tickets</a></li>
+								<li><a href="repoarts.html" class="nav-aside__item">Reports</a></li>
+							</ul>
+						</nav>
+						<div class="aside__dropdown dropdown">
+							<!-- add class to dropdown__name "_active-drop" open drop -->
+							<!-- exemple  <span class="dropdown__name _active-drop"></span> -->
+
+							<span class="dropdown__name dropdown__name_conf-icon">
+								Configuration
+								<span class="dropdown__icon">
+									<svg fill="none">
+										<path d="M6.49996 8.20529C6.26698 8.20529 6.03402 8.11633 5.85639 7.93878L0.266684 2.34902C-0.0888946 1.99344 -0.0888946 1.41693 0.266684 1.0615C0.622118 0.706063 1.19851 0.706063 1.55412 1.0615L6.49996 6.00763L11.4458 1.06167C11.8014 0.706236 12.3778 0.706236 12.7332 1.06167C13.0889 1.4171 13.0889 1.99361 12.7332 2.34919L7.14354 7.93896C6.96582 8.11653 6.73286 8.20529 6.49996 8.20529Z" />
+									</svg>
+								</span>
+
+							</span>
+							<ul class="dropdown__items">
+								<li>
+									<a class="dropdown__item dropdown__item _conf-icon" href="#">Configuration</a>
+								</li>
+
+								<li><a class="dropdown__item" href="#">Log out</a></li>
+							</ul>
+						</div>
+						<div class="aside__switch aside-switch">
+							<span class="aside-switch_d">Dark</span>
+							<div class="aside-switch__wrapp">
+								<input type="checkbox" name="" id="switch">
+								<label for="switch">
+									<div class="switch">
+										<div class="bar"></div>
+									</div>
+								</label>
+							</div>
+							<span class="aside-switch_l">Light</span>
+						</div>
+					</div>
+					<a href="#" class="aside__footer">
+						<img src="img/log/logo.svg" alt="">
+					</a>
+				</aside>
+				<div class="page-dashboard__content dashboard-content">
+					<header class="dashboard-content__header">
+						<div class="dashboard-content__l">
+							<h2 class="dashboard-content__title">Create ticket</h2>
+							<span class="dashboard-content__count">New ticket</span>
+						</div>
+
+					</header>
+					<div class="dashboard-content__body content-body">
+						<form action="#" class="content-body__rows ticket-info">
+							<div class="ticket-info__header">
+								<div class="ticket-info__top ticket-create">
+									<div class="ticket-create__colum">
+										<div class="ticket-create__line">
+											<span class="ticket-create__lable">*Client:</span>
+
+											<div class="ticket-create__dropdown dropdown ">
+												<!-- add class dropdown__name "_active-drop" open drop -->
+												<!-- exemple  <span class="dropdown__name _active-drop"></span> -->
+												<span class="dropdown__name">
+													<div class="dropdown__names">
+														<span>User Name</span>,
+														<span>User Name</span>
+													</div>
+
+													<span class="dropdown__icon">
+														<svg fill="none">
+															<path d="M6.49996 8.20529C6.26698 8.20529 6.03402 8.11633 5.85639 7.93878L0.266684 2.34902C-0.0888946 1.99344 -0.0888946 1.41693 0.266684 1.0615C0.622118 0.706063 1.19851 0.706063 1.55412 1.0615L6.49996 6.00763L11.4458 1.06167C11.8014 0.706236 12.3778 0.706236 12.7332 1.06167C13.0889 1.4171 13.0889 1.99361 12.7332 2.34919L7.14354 7.93896C6.96582 8.11653 6.73286 8.20529 6.49996 8.20529Z" />
+														</svg>
+													</span>
+
+												</span>
+												<ul class="dropdown__items">
+													<li>
+														<div class="dropdown__item checkbox">
+															<input id="user1" type="checkbox" name="remember" class="checkbox__input">
+															<label for="user1" class="checkbox__label"><span>User Name</span></label>
+														</div>
+													</li>
+													<li>
+														<div class="dropdown__item checkbox">
+															<input id="user2" type="checkbox" name="remember" class="checkbox__input">
+															<label for="user2" class="checkbox__label"><span>User Name</span></label>
+														</div>
+													</li>
+													<li>
+														<div class="dropdown__item checkbox">
+															<input id="user3" type="checkbox" name="remember" class="checkbox__input">
+															<label for="user3" class="checkbox__label"><span>User Name</span></label>
+														</div>
+													</li>
+													<li>
+														<div class="dropdown__item checkbox">
+															<input id="user4" type="checkbox" name="remember" class="checkbox__input">
+															<label for="user4" class="checkbox__label"><span>User Name</span></label>
+														</div>
+													</li>
+													<li>
+														<div class="dropdown__item checkbox">
+															<input id="user5" type="checkbox" name="remember" class="checkbox__input">
+															<label for="user5" class="checkbox__label"><span>User Name</span></label>
+														</div>
+													</li>
+													<li>
+														<div class="dropdown__item checkbox">
+															<input id="user6" type="checkbox" name="remember" class="checkbox__input">
+															<label for="user6" class="checkbox__label"><span>User Name</span></label>
+														</div>
+													</li>
+
+												</ul>
+											</div>
+										</div>
+										<div class="ticket-create__line">
+											<span class="ticket-create__lable">To:</span>
+											<div class="ticket-create__dropdown dropdown ">
+												<!-- add class dropdown__name "_active-drop" open drop -->
+												<!-- exemple  <span class="dropdown__name _active-drop"></span> -->
+												<span class="dropdown__name">
+													<div class="dropdown__names">
+														<span>User Name</span>,
+														<span>User Name</span>
+													</div>
+
+													<span class="dropdown__icon">
+														<svg fill="none">
+															<path d="M6.49996 8.20529C6.26698 8.20529 6.03402 8.11633 5.85639 7.93878L0.266684 2.34902C-0.0888946 1.99344 -0.0888946 1.41693 0.266684 1.0615C0.622118 0.706063 1.19851 0.706063 1.55412 1.0615L6.49996 6.00763L11.4458 1.06167C11.8014 0.706236 12.3778 0.706236 12.7332 1.06167C13.0889 1.4171 13.0889 1.99361 12.7332 2.34919L7.14354 7.93896C6.96582 8.11653 6.73286 8.20529 6.49996 8.20529Z" />
+														</svg>
+													</span>
+
+												</span>
+												<ul class="dropdown__items">
+													<li>
+														<div class="dropdown__item checkbox">
+															<input id="user1" type="checkbox" name="remember" class="checkbox__input">
+															<label for="user1" class="checkbox__label"><span>User Name</span></label>
+														</div>
+													</li>
+													<li>
+														<div class="dropdown__item checkbox">
+															<input id="user2" type="checkbox" name="remember" class="checkbox__input">
+															<label for="user2" class="checkbox__label"><span>User Name</span></label>
+														</div>
+													</li>
+													<li>
+														<div class="dropdown__item checkbox">
+															<input id="user3" type="checkbox" name="remember" class="checkbox__input">
+															<label for="user3" class="checkbox__label"><span>User Name</span></label>
+														</div>
+													</li>
+													<li>
+														<div class="dropdown__item checkbox">
+															<input id="user4" type="checkbox" name="remember" class="checkbox__input">
+															<label for="user4" class="checkbox__label"><span>User Name</span></label>
+														</div>
+													</li>
+													<li>
+														<div class="dropdown__item checkbox">
+															<input id="user5" type="checkbox" name="remember" class="checkbox__input">
+															<label for="user5" class="checkbox__label"><span>User Name</span></label>
+														</div>
+													</li>
+													<li>
+														<div class="dropdown__item checkbox">
+															<input id="user6" type="checkbox" name="remember" class="checkbox__input">
+															<label for="user6" class="checkbox__label"><span>User Name</span></label>
+														</div>
+													</li>
+
+												</ul>
+											</div>
+										</div>
+										<div class="ticket-create__line">
+											<span class="ticket-create__lable">*Subject:</span>
+											<div class="ticket-create__dropdown dropdown ">
+												<!-- add class dropdown__name "_active-drop" open drop -->
+												<!-- exemple  <span class="dropdown__name _active-drop"></span> -->
+												<span class="dropdown__name">
+													<div class="dropdown__names">
+														<span>User Name</span>,
+														<span>User Name</span>
+													</div>
+
+													<span class="dropdown__icon">
+														<svg fill="none">
+															<path d="M6.49996 8.20529C6.26698 8.20529 6.03402 8.11633 5.85639 7.93878L0.266684 2.34902C-0.0888946 1.99344 -0.0888946 1.41693 0.266684 1.0615C0.622118 0.706063 1.19851 0.706063 1.55412 1.0615L6.49996 6.00763L11.4458 1.06167C11.8014 0.706236 12.3778 0.706236 12.7332 1.06167C13.0889 1.4171 13.0889 1.99361 12.7332 2.34919L7.14354 7.93896C6.96582 8.11653 6.73286 8.20529 6.49996 8.20529Z" />
+														</svg>
+													</span>
+
+												</span>
+												<ul class="dropdown__items">
+													<li>
+														<div class="dropdown__item checkbox">
+															<input id="user1" type="checkbox" name="remember" class="checkbox__input">
+															<label for="user1" class="checkbox__label"><span>User Name</span></label>
+														</div>
+													</li>
+													<li>
+														<div class="dropdown__item checkbox">
+															<input id="user2" type="checkbox" name="remember" class="checkbox__input">
+															<label for="user2" class="checkbox__label"><span>User Name</span></label>
+														</div>
+													</li>
+													<li>
+														<div class="dropdown__item checkbox">
+															<input id="user3" type="checkbox" name="remember" class="checkbox__input">
+															<label for="user3" class="checkbox__label"><span>User Name</span></label>
+														</div>
+													</li>
+													<li>
+														<div class="dropdown__item checkbox">
+															<input id="user4" type="checkbox" name="remember" class="checkbox__input">
+															<label for="user4" class="checkbox__label"><span>User Name</span></label>
+														</div>
+													</li>
+													<li>
+														<div class="dropdown__item checkbox">
+															<input id="user5" type="checkbox" name="remember" class="checkbox__input">
+															<label for="user5" class="checkbox__label"><span>User Name</span></label>
+														</div>
+													</li>
+													<li>
+														<div class="dropdown__item checkbox">
+															<input id="user6" type="checkbox" name="remember" class="checkbox__input">
+															<label for="user6" class="checkbox__label"><span>User Name</span></label>
+														</div>
+													</li>
+
+												</ul>
+											</div>
+										</div>
+									</div>
+									<div class="ticket-create__colum">
+										<div class="ticket-create__line">
+											<span class="ticket-create__lable">Category:</span>
+
+											<div class="ticket-create__dropdown dropdown ">
+												<!-- add class dropdown__name "_active-drop" open drop -->
+												<!-- exemple  <span class="dropdown__name _active-drop"></span> -->
+												<span class="dropdown__name _active-drop">
+													<div class="dropdown__names ">
+														Category
+													</div>
+
+													<span class="dropdown__icon">
+														<svg fill="none">
+															<path d="M6.49996 8.20529C6.26698 8.20529 6.03402 8.11633 5.85639 7.93878L0.266684 2.34902C-0.0888946 1.99344 -0.0888946 1.41693 0.266684 1.0615C0.622118 0.706063 1.19851 0.706063 1.55412 1.0615L6.49996 6.00763L11.4458 1.06167C11.8014 0.706236 12.3778 0.706236 12.7332 1.06167C13.0889 1.4171 13.0889 1.99361 12.7332 2.34919L7.14354 7.93896C6.96582 8.11653 6.73286 8.20529 6.49996 8.20529Z" />
+														</svg>
+													</span>
+
+												</span>
+												<ul class="dropdown__items">
+													<li>
+														<button class="dropdown__item _active ">
+															Development
+														</button>
+													</li>
+													<li>
+														<button class="dropdown__item ">
+															Support
+														</button>
+													</li>
+
+
+												</ul>
+											</div>
+										</div>
+										<div class="ticket-create__line">
+											<span class="ticket-create__lable">Priority:</span>
+											<div class="ticket-create__dropdown dropdown ">
+												<!-- add class dropdown__name "_active-drop" open drop -->
+												<!-- exemple  <span class="dropdown__name _active-drop"></span> -->
+												<span class="dropdown__name">
+													<div class="dropdown__names ">
+														Category
+													</div>
+
+													<span class="dropdown__icon">
+														<svg fill="none">
+															<path d="M6.49996 8.20529C6.26698 8.20529 6.03402 8.11633 5.85639 7.93878L0.266684 2.34902C-0.0888946 1.99344 -0.0888946 1.41693 0.266684 1.0615C0.622118 0.706063 1.19851 0.706063 1.55412 1.0615L6.49996 6.00763L11.4458 1.06167C11.8014 0.706236 12.3778 0.706236 12.7332 1.06167C13.0889 1.4171 13.0889 1.99361 12.7332 2.34919L7.14354 7.93896C6.96582 8.11653 6.73286 8.20529 6.49996 8.20529Z" />
+														</svg>
+													</span>
+
+												</span>
+												<ul class="dropdown__items">
+													<li>
+														<button class="dropdown__item _active ">
+															Development
+														</button>
+													</li>
+													<li>
+														<button class="dropdown__item ">
+															Support
+														</button>
+													</li>
+
+
+												</ul>
+											</div>
+										</div>
+
+									</div>
+								</div>
+
+							</div>
+
+
+							<div class="ticket-info__footer form-ticket form-ticket_redactor">
+								<div class="form-ticket__elements">
+									<div class="form-ticket__body">
+										<textarea class="form-ticket__textarea" name="text" id="#">Start typing...</textarea>
+									</div>
+
+									<div class="form-ticket__row">
+										<div class="form-ticket__select">
+											Ticket status
+											<select name="status" id="#">
+												<option selected>Choose status</option>
+												<option value="1">
+													Status 1
+												</option>
+												<option value="2"> Status 2</option>
+											</select>
+										</div>
+										<div class="form-ticket__btns">
+											<a href="#" class="ticket-body__show  btn-block">
+												Send
+											</a>
+											<a href="#" class="ticket-body__show ticket-body__show_border btn-block">
+												Cancel
+											</a>
+										</div>
+									</div>
+								</div>
+							</div>
+						</form>
+
+					</div>
+					<footer class="dashboard-content__footer footer-dash">
+
+						<div class="footer-dash__copy">Copyright © 2022-2023 All rights reserved.</div>
+
+
+					</footer>
+				</div>
+			</div>
+		</main>
+
+
+
+	</div>
+
+	<script src="js/app.min.js?_v=20221213112420"></script>
+</body>
+
+</html>

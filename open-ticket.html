@@ -20,6 +20,7 @@
 
 		<main class="page page-dashboard">
 			<div class="page-dashboard__row">
+
 				<aside class="page-dashboard__aside aside ">
 					<!-- toggle click "aside__btn-open" class "menu-open" open/close menu to > 1200px -->
 					<!-- ex - <aside class="page-dashboard__aside aside menu-open"> -->
@@ -31,7 +32,7 @@
 						<div class="aside__dropdown dropdown ">
 							<!-- add class dropdown__name "_active-drop" open drop -->
 							<!-- exemple  <span class="dropdown__name _active-drop"></span> -->
-							<span class="dropdown__name ">
+							<span class="dropdown__name _active-drop">
 								Katerina Gorgos
 								<span class="dropdown__icon">
 									<svg fill="none">
@@ -107,7 +108,7 @@
 									<div class="dashboard-content__dropdown dropdown">
 										<!-- add class dropdown__name "_active-drop" open drop -->
 										<!-- exemple  <span class="dropdown__name _active-drop"></span> -->
-										<span class="dropdown__name">
+										<span class="dropdown__name ">
 											<span class="dropdown__icon">
 												<svg fill="none" xmlns="http://www.w3.org/2000/svg">
 													<path d="M24.5453 15.2046C24.3344 14.9937 24.0483 14.8752 23.75 14.8752C23.4517 14.8752 23.1656 14.9937 22.9546 15.2046L19.25 18.9093V1.375C19.25 1.07663 19.1314 0.790483 18.9205 0.579505C18.7095 0.368526 18.4233 0.25 18.125 0.25C17.8266 0.25 17.5405 0.368526 17.3295 0.579505C17.1185 0.790483 17 1.07663 17 1.375V18.9093L13.2953 15.2046C13.0832 14.9997 12.799 14.8863 12.504 14.8889C12.209 14.8914 11.9269 15.0097 11.7183 15.2183C11.5097 15.4269 11.3914 15.7091 11.3888 16.004C11.3863 16.299 11.4997 16.5832 11.7046 16.7954L17.3296 22.4204C17.4341 22.5251 17.5582 22.6083 17.6949 22.665C17.8316 22.7217 17.9781 22.7509 18.1261 22.7509C18.2741 22.7509 18.4206 22.7217 18.5573 22.665C18.6939 22.6083 18.8181 22.5251 18.9226 22.4204L24.5476 16.7954C24.7582 16.5841 24.8763 16.2978 24.8759 15.9995C24.8754 15.7012 24.7565 15.4153 24.5453 15.2046Z" />
@@ -153,7 +154,7 @@
 									<div class="dashboard-content__dropdown dropdown">
 										<!-- add class dropdown__name "_active-drop" open drop -->
 										<!-- exemple  <span class="dropdown__name _active-drop"></span> -->
-										<span class="dropdown__name ">
+										<span class="dropdown__name">
 											<span class="dropdown__icon">
 												<svg fill="none">
 													<path d="M8.76038 10.8684C9.00174 11.131 9.13425 11.4741 9.13425 11.8291V22.2881C9.13425 22.9175 9.89383 23.237 10.3434 22.7945L13.2611 19.4509C13.6515 18.9824 13.8668 18.7505 13.8668 18.2867V11.8314C13.8668 11.4765 14.0017 11.1334 14.2407 10.8707L22.6126 1.78655C23.2397 1.10506 22.757 0 21.8294 0H1.17166C0.24408 0 -0.24101 1.10269 0.388423 1.78655L8.76038 10.8684Z" />
@@ -165,8 +166,7 @@
 										<ul class="dropdown__items">
 											<li><button class="dropdown__item">Category</button></li>
 											<li class="dropdown__parent">
-												<!-- exemple  <span class="dropdown__item _active"></span> -->
-												<button class="dropdown__item ">Priority</button>
+												<button class="dropdown__item _active">Priority</button>
 												<ul class="dropdown__sublist sublist-drop">
 													<li class="sublist-drop__li">
 														<button class="dropdown__item icon-high _active">High</button>
@@ -189,46 +189,13 @@
 							</div>
 						</div>
 					</header>
-					<div class="dashboard-content__body content-body">
+					<div class="dashboard-content__body content-body content-body_columns">
 
 						<div class="content-body__rows">
-							<a href="#" class="content-body__row content-row">
+							<a href="#" class="content-body__row content-row _active">
 								<span class="content-row__icon content-row__icon_with"></span>
 								<div class="content-row__column">
 									<div class="content-row__title">
-
-										Ticket title
-									</div>
-								</div>
-								<div class="content-row__column">
-									<span class="content-row__username">User name</span>
-									<span class="content-row__date">12 November 2022</span>
-								</div>
-								<div class="content-row__column">
-									<span class="content-row__username">Responsible</span>
-								</div>
-							</a>
-							<a href="#" class="content-body__row content-row">
-								<span class="content-row__icon content-row__icon_green"></span>
-								<div class="content-row__column">
-									<div class="content-row__title">
-
-										Ticket title
-									</div>
-								</div>
-								<div class="content-row__column">
-									<span class="content-row__username">User name</span>
-									<span class="content-row__date">12 November 2022</span>
-								</div>
-								<div class="content-row__column">
-									<span class="content-row__username">Responsible</span>
-								</div>
-							</a>
-							<a href="#" class="content-body__row content-row">
-								<span class="content-row__icon content-row__icon_blue"></span>
-								<div class="content-row__column">
-									<div class="content-row__title">
-
 										Ticket title
 									</div>
 									<span class="content-row__lable icon-high">
@@ -236,44 +203,27 @@
 								</div>
 								<div class="content-row__column">
 									<span class="content-row__username">User name</span>
-									<span class="content-row__date">12 November 2022</span>
-								</div>
-								<div class="content-row__column">
-									<span class="content-row__username">Responsible</span>
-								</div>
-							</a>
-							<a href="#" class="content-body__row content-row">
-								<span class="content-row__icon content-row__icon_blue"></span>
-								<div class="content-row__column">
-									<div class="content-row__title">
 
-										Ticket title
-									</div>
-									<span class="content-row__lable icon-low">
-									</span>
 								</div>
 								<div class="content-row__column">
-									<span class="content-row__username">User name</span>
-									<span class="content-row__date">12 November 2022</span>
-								</div>
-								<div class="content-row__column">
-									<span class="content-row__username">Responsible</span>
+									<span class="content-row__date">Created: 12.11.2022</span>
+									<span class="content-row__username">Edited: 13.11.2022</span>
 								</div>
 							</a>
 							<a href="#" class="content-body__row content-row">
 								<span class="content-row__icon content-row__icon_green"></span>
 								<div class="content-row__column">
 									<div class="content-row__title">
-
 										Ticket title
 									</div>
 								</div>
 								<div class="content-row__column">
 									<span class="content-row__username">User name</span>
-									<span class="content-row__date">12 November 2022</span>
+
 								</div>
 								<div class="content-row__column">
-									<span class="content-row__username">Responsible</span>
+									<span class="content-row__date">Created: 12.11.2022</span>
+									<span class="content-row__username">Edited: 13.11.2022</span>
 								</div>
 							</a>
 							<a href="#" class="content-body__row content-row">
@@ -286,10 +236,10 @@
 								</div>
 								<div class="content-row__column">
 									<span class="content-row__username">User name</span>
-									<span class="content-row__date">12 November 2022</span>
 								</div>
 								<div class="content-row__column">
-									<span class="content-row__username">Responsible</span>
+									<span class="content-row__date">Created: 12.11.2022</span>
+									<span class="content-row__username">Edited: 13.11.2022</span>
 								</div>
 							</a>
 							<div class="content-body__row content-row _red">
@@ -302,10 +252,10 @@
 								</div>
 								<div class="content-row__column">
 									<span class="content-row__username">User name</span>
-									<span class="content-row__date">12 November 2022</span>
 								</div>
 								<div class="content-row__column">
-									<span class="content-row__username">Responsible</span>
+									<span class="content-row__date">Created: 12.11.2022</span>
+									<span class="content-row__username">Edited: 13.11.2022</span>
 								</div>
 							</div>
 							<a href="#" class="content-body__row content-row">
@@ -320,28 +270,10 @@
 								</div>
 								<div class="content-row__column">
 									<span class="content-row__username">User name</span>
-									<span class="content-row__date">12 November 2022</span>
 								</div>
 								<div class="content-row__column">
-									<span class="content-row__username">Responsible</span>
-								</div>
-							</a>
-							<a href="#" class="content-body__row content-row">
-								<span class="content-row__icon content-row__icon_with"></span>
-								<div class="content-row__column">
-									<div class="content-row__title">
-
-										Ticket title
-									</div>
-									<!-- <span class="content-row__lable icon-high">
-									</span> -->
-								</div>
-								<div class="content-row__column">
-									<span class="content-row__username">User name</span>
-									<span class="content-row__date">12 November 2022</span>
-								</div>
-								<div class="content-row__column">
-									<span class="content-row__username">Responsible</span>
+									<span class="content-row__date">Created: 12.11.2022</span>
+									<span class="content-row__username">Edited: 13.11.2022</span>
 								</div>
 							</a>
 							<a href="#" class="content-body__row content-row">
@@ -356,10 +288,61 @@
 								</div>
 								<div class="content-row__column">
 									<span class="content-row__username">User name</span>
-									<span class="content-row__date">12 November 2022</span>
+
 								</div>
 								<div class="content-row__column">
-									<span class="content-row__username">Responsible</span>
+									<span class="content-row__date">Created: 12.11.2022</span>
+									<span class="content-row__username">Edited: 13.11.2022</span>
+								</div>
+							</a>
+							<a href="#" class="content-body__row content-row">
+								<span class="content-row__icon content-row__icon_with"></span>
+								<div class="content-row__column">
+									<div class="content-row__title">
+										Ticket title
+									</div>
+									<span class="content-row__lable icon-high">
+									</span>
+								</div>
+								<div class="content-row__column">
+									<span class="content-row__username">User name</span>
+
+								</div>
+								<div class="content-row__column">
+									<span class="content-row__date">Created: 12.11.2022</span>
+									<span class="content-row__username">Edited: 13.11.2022</span>
+								</div>
+							</a>
+							<a href="#" class="content-body__row content-row">
+								<span class="content-row__icon content-row__icon_green"></span>
+								<div class="content-row__column">
+									<div class="content-row__title">
+										Ticket title
+									</div>
+								</div>
+								<div class="content-row__column">
+									<span class="content-row__username">User name</span>
+
+								</div>
+								<div class="content-row__column">
+									<span class="content-row__date">Created: 12.11.2022</span>
+									<span class="content-row__username">Edited: 13.11.2022</span>
+								</div>
+							</a>
+							<a href="#" class="content-body__row content-row">
+								<span class="content-row__icon content-row__icon_blue"></span>
+								<div class="content-row__column">
+									<div class="content-row__title">
+
+										Ticket title
+									</div>
+								</div>
+								<div class="content-row__column">
+									<span class="content-row__username">User name</span>
+								</div>
+								<div class="content-row__column">
+									<span class="content-row__date">Created: 12.11.2022</span>
+									<span class="content-row__username">Edited: 13.11.2022</span>
 								</div>
 							</a>
 							<div class="content-body__row content-row _red">
@@ -369,15 +352,13 @@
 
 										Ticket title
 									</div>
-									<!-- <span class="content-row__lable icon-high">
-									</span> -->
 								</div>
 								<div class="content-row__column">
 									<span class="content-row__username">User name</span>
-									<span class="content-row__date">12 November 2022</span>
 								</div>
 								<div class="content-row__column">
-									<span class="content-row__username">Responsible</span>
+									<span class="content-row__date">Created: 12.11.2022</span>
+									<span class="content-row__username">Edited: 13.11.2022</span>
 								</div>
 							</div>
 							<a href="#" class="content-body__row content-row">
@@ -392,10 +373,10 @@
 								</div>
 								<div class="content-row__column">
 									<span class="content-row__username">User name</span>
-									<span class="content-row__date">12 November 2022</span>
 								</div>
 								<div class="content-row__column">
-									<span class="content-row__username">Responsible</span>
+									<span class="content-row__date">Created: 12.11.2022</span>
+									<span class="content-row__username">Edited: 13.11.2022</span>
 								</div>
 							</a>
 							<a href="#" class="content-body__row content-row">
@@ -410,98 +391,225 @@
 								</div>
 								<div class="content-row__column">
 									<span class="content-row__username">User name</span>
-									<span class="content-row__date">12 November 2022</span>
+
 								</div>
 								<div class="content-row__column">
-									<span class="content-row__username">Responsible</span>
+									<span class="content-row__date">Created: 12.11.2022</span>
+									<span class="content-row__username">Edited: 13.11.2022</span>
 								</div>
 							</a>
-							<a href="#" class="content-body__row content-row">
-								<span class="content-row__icon content-row__icon_with"></span>
-								<div class="content-row__column">
-									<div class="content-row__title">
 
+
+						</div>
+						<div class="content-body__rows ticket-info">
+							<div class="ticket-info__header">
+								<div class="ticket-info__top">
+									<h4 class="ticket-info__title">
 										Ticket title
+									</h4>
+									<div class="ticket-info__info">
+										<div class="ticket-info__status icon-high">
+											Hight priority
+										</div>
+										<span>Category</span>
 									</div>
-									<span class="content-row__lable icon-high">
-									</span>
 								</div>
-								<div class="content-row__column">
-									<span class="content-row__username">User name</span>
-									<span class="content-row__date">12 November 2022</span>
-								</div>
-								<div class="content-row__column">
-									<span class="content-row__username">Responsible</span>
-								</div>
-							</a>
-							<a href="#" class="content-body__row content-row">
-								<span class="content-row__icon content-row__icon_with"></span>
-								<div class="content-row__column">
-									<div class="content-row__title">
-
-										Ticket title
+								<div class="ticket-info__top ticket-body">
+									<p class="ticket-body__text">Ticket body</p>
+									<div class="ticket-body__bottom">
+										<div class="ticket-body__l">
+											<span class="ticket-body__name">User name</span>
+											<div class="ticket-body__date">
+												<span class="ticket-body__hor">14:00</span>
+												, 12 November 2022
+											</div>
+										</div>
+										<a href="#" class="ticket-body__show  btn-block">
+											<span>Show attachments</span>
+										</a>
 									</div>
-									<span class="content-row__lable icon-high">
-									</span>
 								</div>
-								<div class="content-row__column">
-									<span class="content-row__username">User name</span>
-									<span class="content-row__date">12 November 2022</span>
-								</div>
-								<div class="content-row__column">
-									<span class="content-row__username">Responsible</span>
-								</div>
-							</a>
-							<a href="#" class="content-body__row content-row">
-								<span class="content-row__icon content-row__icon_with"></span>
-								<div class="content-row__column">
-									<div class="content-row__title">
+							</div>
+							<div class="ticket-info__messages">
+								<div class="ticket-info__message message-ticket ">
+									<p class="message-ticket__text">
 
-										Ticket title
+									</p>
+									<div class="message-ticket__bottom ticket-body__bottom">
+										<div class="ticket-body__l">
+											<span class="ticket-body__name">User name</span>
+											<div class="ticket-body__date">
+												<span class="ticket-body__hor">14:00</span>
+												, 12 November 2022
+											</div>
+										</div>
+										<div class="ticket-body__r">
+											<a href="#" class="ticket-body__show ticket-body__show_blue btn-block">
+												<span>Show attachments</span>
+											</a>
+											<a href="#" class="ticket-body__reply">
+												<span>Reply</span>
+											</a>
+										</div>
+
 									</div>
-									<span class="content-row__lable icon-high">
-									</span>
 								</div>
-								<div class="content-row__column">
-									<span class="content-row__username">User name</span>
-									<span class="content-row__date">12 November 2022</span>
-								</div>
-								<div class="content-row__column">
-									<span class="content-row__username">Responsible</span>
-								</div>
-							</a>
+								<div class="ticket-info__message message-ticket message-ticket_modif">
+									<p class="message-ticket__text">
 
+									</p>
+									<div class="message-ticket__bottom ticket-body__bottom">
+										<div class="ticket-body__l">
+											<span class="ticket-body__name">User name</span>
+											<div class="ticket-body__date">
+												<span class="ticket-body__hor">14:00</span>
+												, 12 November 2022
+											</div>
+										</div>
+										<div class="ticket-body__r">
+											<a href="#" class="ticket-body__show ticket-body__show_blue btn-block">
+												<span>Show attachments</span>
+											</a>
+											<a href="#" class="ticket-body__reply">
+												<span>Reply</span>
+											</a>
+										</div>
+
+									</div>
+								</div>
+								<div class="ticket-info__message message-ticket ">
+									<p class="message-ticket__text">
+
+									</p>
+									<div class="message-ticket__bottom ticket-body__bottom">
+										<div class="ticket-body__l">
+											<span class="ticket-body__name">User name</span>
+											<div class="ticket-body__date">
+												<span class="ticket-body__hor">14:00</span>
+												, 12 November 2022
+											</div>
+										</div>
+										<div class="ticket-body__r">
+
+											<a href="#" class="ticket-body__reply">
+												<span>Reply</span>
+											</a>
+										</div>
+
+									</div>
+								</div>
+
+								<div class="ticket-info__message message-ticket ">
+									<p class="message-ticket__text">
+
+									</p>
+									<div class="message-ticket__bottom ticket-body__bottom">
+										<div class="ticket-body__l">
+											<span class="ticket-body__name">User name</span>
+											<div class="ticket-body__date">
+												<span class="ticket-body__hor">14:00</span>
+												, 12 November 2022
+											</div>
+										</div>
+										<div class="ticket-body__r">
+											<a href="#" class="ticket-body__show ticket-body__show_blue btn-block">
+												<span>Show attachments</span>
+											</a>
+											<a href="#" class="ticket-body__reply">
+												<span>Reply</span>
+											</a>
+										</div>
+
+									</div>
+								</div>
+								<div class="ticket-info__message message-ticket message-ticket_modif">
+									<p class="message-ticket__text">
+
+									</p>
+									<div class="message-ticket__bottom ticket-body__bottom">
+										<div class="ticket-body__l">
+											<span class="ticket-body__name">User name</span>
+											<div class="ticket-body__date">
+												<span class="ticket-body__hor">14:00</span>
+												, 12 November 2022
+											</div>
+										</div>
+										<div class="ticket-body__r">
+											<a href="#" class="ticket-body__show ticket-body__show_blue btn-block">
+												<span>Show attachments</span>
+											</a>
+											<a href="#" class="ticket-body__reply">
+												<span>Reply</span>
+											</a>
+										</div>
+
+									</div>
+								</div>
+								<div class="ticket-info__message message-ticket ">
+									<p class="message-ticket__text">
+
+									</p>
+									<div class="message-ticket__bottom ticket-body__bottom">
+										<div class="ticket-body__l">
+											<span class="ticket-body__name">User name</span>
+											<div class="ticket-body__date">
+												<span class="ticket-body__hor">14:00</span>
+												, 12 November 2022
+											</div>
+										</div>
+										<div class="ticket-body__r">
+											<a href="#" class="ticket-body__show ticket-body__show_blue btn-block">
+												<span>Show attachments</span>
+											</a>
+											<a href="#" class="ticket-body__reply">
+												<span>Reply</span>
+											</a>
+										</div>
+
+									</div>
+								</div>
+
+
+							</div>
+
+							<div class="ticket-info__footer form-ticket">
+								<form action="#" class="form-ticket__elements">
+									<textarea class="form-ticket__textarea" name="text" id="#">Start typing...</textarea>
+								</form>
+							</div>
 						</div>
 
 
-
 					</div>
-					<footer class="dashboard-content__footer footer-dash">
+					<footer class="dashboard-content__footer footer-dash footer-dash_columns">
 						<div class="footer-dash__left">
-							<div class="footer-dash__drop">
-								<div class="footer-dash__dropdown dropdown ">
-									<!-- add class dropdown__name "_active-drop" open drop -->
-									<!-- exemple  <span class="dropdown__name _active-drop"></span> -->
-									<span class="dropdown__name">
-										100
-										<span class="dropdown__icon">
-											<svg fill="none">
-												<path d="M6.49996 8.20529C6.26698 8.20529 6.03402 8.11633 5.85639 7.93878L0.266684 2.34902C-0.0888946 1.99344 -0.0888946 1.41693 0.266684 1.0615C0.622118 0.706063 1.19851 0.706063 1.55412 1.0615L6.49996 6.00763L11.4458 1.06167C11.8014 0.706236 12.3778 0.706236 12.7332 1.06167C13.0889 1.4171 13.0889 1.99361 12.7332 2.34919L7.14354 7.93896C6.96582 8.11653 6.73286 8.20529 6.49996 8.20529Z" />
-											</svg>
-										</span>
+							<div class="footer-dash__column">
+								<div class="footer-dash__drop">
+									<div class="footer-dash__dropdown dropdown ">
+										<!-- add class dropdown__name "_active-drop" open drop -->
+										<!-- exemple  <span class="dropdown__name _active-drop"></span> -->
+										<span class="dropdown__name">
+											100
+											<span class="dropdown__icon">
+												<svg fill="none">
+													<path d="M6.49996 8.20529C6.26698 8.20529 6.03402 8.11633 5.85639 7.93878L0.266684 2.34902C-0.0888946 1.99344 -0.0888946 1.41693 0.266684 1.0615C0.622118 0.706063 1.19851 0.706063 1.55412 1.0615L6.49996 6.00763L11.4458 1.06167C11.8014 0.706236 12.3778 0.706236 12.7332 1.06167C13.0889 1.4171 13.0889 1.99361 12.7332 2.34919L7.14354 7.93896C6.96582 8.11653 6.73286 8.20529 6.49996 8.20529Z" />
+												</svg>
+											</span>
 
-									</span>
-									<ul class="dropdown__items">
-										<li><button class="dropdown__item dropdown__item_custum">Custom</button></li>
-										<li><button class="dropdown__item _active">100</button></li>
-										<li><button class="dropdown__item">50</button></li>
-										<li><button class="dropdown__item">30</button></li>
-										<li><button class="dropdown__item">20</button></li>
-									</ul>
+										</span>
+										<ul class="dropdown__items">
+											<li><button class="dropdown__item dropdown__item_custum">Custom</button></li>
+											<li><button class="dropdown__item _active">100</button></li>
+											<li><button class="dropdown__item">50</button></li>
+											<li><button class="dropdown__item">30</button></li>
+											<li><button class="dropdown__item">20</button></li>
+										</ul>
+									</div>
+									per page
 								</div>
-								per page
+
 							</div>
-							<div class="footer-dash__center pagination">
+							<div class="footer-dash__column pagination">
 								<nav class="pagination__nav">
 									<ul class="pagination__list">
 										<li class="pagination__li pagination__li_icon">
@@ -540,7 +648,6 @@
 									</ul>
 								</nav>
 							</div>
-
 						</div>
 
 
